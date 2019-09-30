@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Shift  |   Z  |   X  |   C  |   V  |   B  |  < > |           |   ^  |   N  |   M  |  , ; |  . : | -  _ |  @  *  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *                    .----------.   .-------.                                 .------.   .-----.
- *                    |   Ctrl   |   |  CMD  |                                 | BKSP |   | ALT |
+ *                    |   Ctrl   |   |  CMD  |                                 | Space|   | BKSP|
  *                    '----------'   '-------'                                 `------.   '-----'
  *                                        ,-------.                      ,-------.
  *                                        |  ALT  |                      | DEL   |
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      LT(NUMB, KC_ESC),      KC_Q,  KC_W,   KC_E,   KC_R, KC_T,                                          KC_Y,  KC_U, KC_I, KC_O,   KC_P,    NO_AA,
      KC_TAB,                KC_A,  KC_S,   KC_D,   KC_F, KC_G, NO_APOS_MAC,                   NO_ACUT,  KC_H,  KC_J, KC_K, KC_L,   NO_OSLH, NO_AE,
      KC_LSFT,               KC_Z,  KC_X,   KC_C,   KC_V, KC_B, NO_PIPE, KC_LALT,      KC_DEL, NO_CIRC,  KC_N,  KC_M, KC_COMM, KC_DOT, NO_MINS, NO_AT_MAC,
-                           KC_LCTL, KC_LCMD, LT(SYMB, KC_SPC), LT(NUMB, KC_ESC),    LT(SYMB, KC_SPC), LT(NUMB, KC_ENT), KC_BSPC, KC_RALT
+                           KC_LCTL, KC_LCMD, LT(SYMB, KC_SPC), LT(NUMB, KC_ESC),    LT(SYMB, KC_SPC), LT(NUMB, KC_ENT), KC_SPC, KC_BSPC
     ),
 /* Keymap 1: Symbols layer
  *
@@ -57,10 +57,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |        |  %   |  ^   |  [   |  ]   |  ~   |      |           |      |      |  |   |  [   |  ]   |  / ? | - _    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *                        .------.   .------.                                 .------.   .-----.
- *                        |      |   |      |                                 |      |   |     |
+ *                        |      |   |      |                                 |      |   | DEL |
  *                        '------'   '------'                                 `------.   '-----'
  *                                        ,-------.                     ,-------.
- *                                        |       |                     | Del   |
+ *                                        |       |                     |       |
  *                                 ,------|-------|                     |-------|------.
  *                                 |      |       |                     |       |      |
  *                                 |   ;  |   =   |                     |   =   |   ;  |
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                                            NO_AMPR, NO_SLSH,     NO_LPRN,     NO_RPRN,     NO_EQL,  NO_QUES,
     KC_TRNS, KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV,  KC_TRNS,                          KC_TRNS, KC_TRNS, NO_BSLS_MAC, NO_LCBR_MAC, NO_RCBR_MAC, KC_PERC, NO_TILD,
     KC_TRNS, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, NO_PIPE_MAC, NO_LBRC,     NO_RBRC,     KC_SLSH, KC_MINS,
-                                        KC_TRNS, KC_TRNS, KC_SCLN, KC_EQL,         KC_EQL,  KC_SCLN, KC_DEL, KC_TRNS
+                                        KC_TRNS, KC_TRNS, KC_SCLN, KC_EQL,         KC_EQL,  KC_SCLN, KC_TRNS, KC_DEL
     ),
 /* Keymap 2: Pad/Function layer
  *
