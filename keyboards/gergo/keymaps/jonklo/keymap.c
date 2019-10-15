@@ -52,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-------------------------------------------.                         ,-------------------------------------------.
  * |        |  !   |   "  |   #  |   $  |   %  |                         |   &  |   /  |  (   |   )  |  =   |   ?    |
  * |--------+------+------+------+------+------+------.           .------+------+------+------+------+------+--------|
- * |        |  #   |  $   |  (   |  )   |  `   |      |           |      |      |  \   |  {   |  }   |  %   |   ~    |
+ * |        |      |      |      |      |      |   "  |           |      |      |  \   |  {   |  }   |  +   |   ~    |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |        |  %   |  ^   |  [   |  ]   |  ~   |      |           |      |      |  |   |  [   |  ]   |  / ? | - _    |
+ * |        |      |      |      |      |      |      |           |      |      |  |   |  [   |  ]   |      |        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *                        .------.   .------.                                 .------.   .-----.
  *                        |      |   |      |                                 |      |   | DEL |
@@ -63,15 +63,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |       |                     |       |
  *                                 ,------|-------|                     |-------|------.
  *                                 |      |       |                     |       |      |
- *                                 |   ;  |   =   |                     |   =   |   ;  |
+ *                                 |   ;  |   =   |                     |   =   |   :  |
  *                                 |      |       |                     |       |      |
  *                                 `--------------'                     `--------------'
  */
 [SYMB] = LAYOUT_gergo(
     KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                                            NO_AMPR, NO_SLSH,     NO_LPRN,     NO_RPRN,     NO_EQL,  NO_QUES,
-    KC_TRNS, KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV,  KC_TRNS,                          KC_TRNS, KC_TRNS, NO_BSLS_MAC, NO_LCBR_MAC, NO_RCBR_MAC, KC_PERC, NO_TILD,
-    KC_TRNS, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, NO_PIPE_MAC, NO_LBRC,     NO_RBRC,     KC_SLSH, KC_MINS,
-                                        KC_TRNS, KC_TRNS, KC_SCLN, KC_EQL,         KC_EQL,  KC_SCLN, KC_TRNS, KC_DEL
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, NO_QUO2,                          KC_TRNS, KC_TRNS, NO_BSLS_MAC, NO_LCBR_MAC, NO_RCBR_MAC, NO_PLUS, NO_TILD,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, NO_PIPE_MAC, NO_LBRC,     NO_RBRC,     KC_TRNS, KC_TRNS,
+                                        KC_TRNS, KC_TRNS, KC_SCLN, KC_EQL,         KC_EQL,  NO_COLN, KC_TRNS, KC_DEL
     ),
 /* Keymap 2: Pad/Function layer
  *
